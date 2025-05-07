@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudhir Goswami | Data Scientist & AI/ML Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #2e6b47 !important;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand, .nav-link {
+      color: #0a0a0a !important;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #0b0b0b !important;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #28a745, #17a2b8);
+      color: rgb(14, 13, 13);
+      padding: 150px 0;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://source.unsplash.com/random/1920x1080/?data') no-repeat center/cover;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .section-title {
+      margin: 60px 0 30px;
+      font-weight: 700;
+      text-align: center;
+      color: #2e6b47;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #2e6b47;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-card {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .badge {
+      background-color: #2e6b47;
+      margin: 5px;
+      font-size: 0.9rem;
+    }
+
+    .stats-section {
+      background: #f1f3f5;
+      padding: 50px 0;
+    }
+
+    .stats-card {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .stats-card h3 {
+      font-size: 2.5rem;
+      color: #2e6b47;
+    }
+
+    .blog-card img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .contact-form {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #2e6b47;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    .social-links a {
+      color: #ffffff;
+      margin: 0 15px;
+      font-size: 1.8rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #d4edda;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.8rem; }
+      .hero p { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sudhir Goswami</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Sudhir Goswami</h1>
+      <p>Data Scientist | AI Engineer | Machine Learning Expert</p>
+      <p>Building Intelligent Solutions with Data and AI</p>
+      <div class="mt-4">
+        <a href="#contact" class="btn btn-light me-2">Get in Touch</a>
+        <a href="resume.pdf" class="btn btn-outline-light" download>Download Resume</a>
+      </div>
+      <div class="mt-4 social-links">
+        <a href="https://linkedin.com/in/sudhirgoswami" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/sudhirgoswami" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/sudhirgoswami" target="_blank"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <h2 class="section-title">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>
+          With 6.6+ years of experience, I’m a seasoned Data Scientist and AI/ML Engineer passionate about transforming data into actionable insights. My expertise includes deep learning (TensorFlow, PyTorch), NLP, computer vision, and cloud-based data pipelines (AWS, GCP, Azure). I’ve led projects that boosted operational efficiency by 30% and user engagement by 25%. My goal is to drive innovation through AI and data science, solving complex business challenges with cutting-edge solutions.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://source.unsplash.com/random/400x400/?portrait" class="img-fluid rounded-circle" alt="Sudhir Goswami" style="max-width: 300px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container py-5">
+    <h2 class="section-title">Core Skills</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="skill-card text-center">
+          <h5>Data Science & Analytics</h5>
+          <p>Python (Pandas, NumPy), R, SQL, Statistical Modeling, A/B Testing</p>
+          <span class="badge text-white">Advanced</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card text-center">
+          <h5>Machine Learning & AI</h5>
+          <p>TensorFlow, PyTorch, Scikit-learn, XGBoost, NLP, Computer Vision</p>
+          <span class="badge text-white">Expert</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card text-center">
+          <h5>Cloud & Visualization</h5>
+          <p>AWS, GCP, Azure, Power BI, Tableau, Looker, Docker</p>
+          <span class="badge text-white">Proficient</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <h2 class="section-title">Achievements</h2>
+      <div class="row">
+        <div class="col-md-3 stats-card">
+          <h3 class="counter" data-target="4.6">0</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="col-md-3 stats-card">
+          <h3 class="counter" data-target="20">0</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="col-md-3 stats-card">
+          <h3 class="counter" data-target="5">0</h3>
+          <p>Certifications</p>
+        </div>
+        <div class="col-md-3 stats-card">
+          <h3 class="counter" data-target="3">0</h3>
+          <p>Industries Served</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container py-5">
+    <h2 class="section-title">Key Projects</h2>
+    <div class="mb-4 text-center">
+      <button class="btn btn-outline-success me-2 filter-btn" data-filter="all">All</button>
+      <button class="btn btn-outline-success me-2 filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="btn btn-outline-success me-2 filter-btn" data-filter="nlp">NLP</button>
+      <button class="btn btn-outline-success filter-btn" data-filter="vision">Computer Vision</button>
+    </div>
+    <div class="row project-container">
+      <div class="col-md-6 mb-4 project-item" data-category="ml">
+        <div class="card shadow p-3">
+          <h5>Customer Churn Prediction</h5>
+          <p>Built a churn prediction model using XGBoost, achieving 82% precision. Deployed on AWS for real-time insights, reducing churn by 10%.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 project-item" data-category="ml">
+        <div class="card shadow p-3">
+          <h5>Lead Prioritization System</h5>
+          <p>Developed an ML model to rank leads, improving conversion rates by 22%. Integrated with CRM using Python and Tableau.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 project-item" data-category="nlp">
+        <div class="card shadow p-3">
+          <h5>NLP Complaint Classifier</h5>
+          <p>Used BERT to automate complaint categorization, achieving 80% accuracy. Reduced manual processing time by 50%.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 project-item" data-category="vision">
+        <div class="card shadow p-3">
+          <h5>Computer Vision Quality Control</h5>
+          <p>Implemented a CNN-based model using PyTorch for defect detection, improving quality control accuracy by 35%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="container py-5">
+    <h2 class="section-title">Insights & Blog</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card blog-card">
+          <img src="https://source.unsplash.com/random/400x200/?machine-learning" alt="Blog 1">
+          <div class="card-body">
+            <h5>The Future of AI in Business</h5>
+            <p>Exploring how AI and ML are transforming industries with predictive analytics and automation.</p>
+            <a href="#" class="btn btn-outline-success">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card blog-card">
+          <img src="https://source.unsplash.com/random/400x200/?data-science" alt="Blog 2">
+          <div class="card-body">
+            <h5>Mastering NLP with BERT</h5>
+            <p>A deep dive into using BERT for natural language processing tasks and its applications.</p>
+            <a href="#" class="btn btn-outline-success">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card blog-card">
+          <img src="https://source.unsplash.com/random/400x200/?cloud" alt="Blog 3">
+          <div class="card-body">
+            <h5>Scaling ML with Cloud Platforms</h5>
+            <p>How AWS, GCP, and Azure empower scalable machine learning solutions.</p>
+            <a href="#" class="btn btn-outline-success">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="row">
+      <div class="col-md-6 contact-form">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <p><strong>Email:</strong> sudhir.ai.ml@gmail.com</p>
+        <p><strong>Mobile:</strong> +91 7024137907</p>
+        <div class="social-links mt-4">
+          <a href="https://linkedin.com/in/sudhirgoswami" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/sudhirgoswami" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://twitter.com/sudhirgoswami" target="_blank"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Sudhir Goswami | Data Scientist & AI/ML Engineer</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/sudhirgoswami" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/sudhirgoswami" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/sudhirgoswami" target="_blank"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+          top: targetElement.offsetTop - 70,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Stats counter animation
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 200;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+          updateCount();
+          observer.disconnect();
+        }
+      });
+      observer.observe(counter);
+    });
+
+    // Project filter
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        projectItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+
+    // Contact form validation
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      if (name && email && message) {
+        alert('Message sent successfully! (Note: This is a demo.)');
+        contactForm.reset();
+      } else {
+        alert('Please fill in all fields.');
+      }
+    });
+  </script>
+</body>
+
+</html>
